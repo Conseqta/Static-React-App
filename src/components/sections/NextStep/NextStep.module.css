@@ -1,0 +1,120 @@
+.section {
+  background: #f4f4f4;
+  padding: 5rem 2rem;
+  margin: 0;
+}
+
+.heading {
+  margin: 0 0 1.5rem;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 100;
+}
+
+.subheading {
+  margin: 0;
+  color: #000000;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.ctaRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 220px));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.ctaButton {
+  border-radius: 0 !important;
+  padding-inline: 24px !important;
+  padding-block: 14px !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  height: 48px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Secondary button */
+.ctaButton:global(.cds--btn--secondary) {
+  background-color: transparent !important;
+  border: 1px solid #0f62fe !important;
+  color: #0f62fe !important;
+}
+
+.ctaButton:global(.cds--btn--secondary:hover) {
+  background-color: rgba(15, 98, 254, 0.1) !important;
+  border: 1px solid #0f62fe !important;
+  color: #0f62fe !important;
+}
+
+.ctaInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ctaIcon {
+  flex-shrink: 0;
+}
+
+.exploreHeadingCol {
+  margin-top: 1.75rem;
+}
+
+.exploreHeading {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+.linkCol {
+  margin-top: 0.75rem;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.75rem 0.5rem;
+}
+
+.textLink {
+  color: #0f62fe !important;
+  text-decoration: none !important;
+}
+
+.arrowIcon {
+  color: #0f62fe;
+}
+
+@media (max-width: 1056px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .ctaRow {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .exploreHeadingCol {
+    margin-top: 1.5rem;
+  }
+}

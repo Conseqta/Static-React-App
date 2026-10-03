@@ -1,0 +1,120 @@
+.sectionContainer {
+  background-color: var(--cds-ui-02, #f4f4f4);
+  padding: 3rem 2rem 3rem 25px;
+  margin: 0;
+}
+
+.mainHeading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.cardsGrid {
+  padding-inline: 0 !important;
+}
+
+.cardColumn {
+  margin-bottom: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: none;
+  border: 1px solid #e0e0e0;
+}
+
+.logoWrapper {
+  height: auto;
+  min-height: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.partnerLogo {
+  object-fit: contain;
+  transform-origin: left top;
+}
+
+.logoPlaceholder {
+  width: 80px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #525252;
+  margin-bottom: 1rem;
+  letter-spacing: 0.8px;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  margin-bottom: 5rem;
+  flex: 1 1;
+}
+
+.ctaAnchor {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.ctaAnchor:hover {
+  text-decoration: underline;
+}
+
+.ctaIcon {
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+.viewAllColumn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.viewAllButton {
+  background-color: #0f62fe;
+  color: #ffffff;
+  padding: 0.875rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewAllButton:hover {
+  background-color: #0353e9;
+}

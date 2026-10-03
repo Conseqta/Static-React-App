@@ -1,0 +1,59 @@
+.section {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.titleRow {
+  margin-bottom: 1rem;
+  padding-inline: 0;
+}
+
+.titleCol {
+  padding-left: 0;
+}
+
+.itemsRow {
+  padding-inline: 0;
+  gap: 1.5rem;
+}
+
+.heading {
+  font-size: clamp(1.75rem, 2.4vw, 2.75rem);
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 500;
+  color: #161616;
+}
+
+.itemCol {
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+}
+
+.itemInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric {
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: #161616;
+}
+
+.description {
+  color: #4f4f4f;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 3rem;
+  }
+}

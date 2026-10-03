@@ -1,0 +1,143 @@
+.section {
+  background: #ffffff;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.topGrid {
+  margin-bottom: 2.5rem;
+  align-items: flex-start;
+  padding-inline: 0 !important;
+}
+
+.leftCol {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(2.5rem, 4vw, 3.25rem);
+  line-height: 1.2;
+  font-weight: 100;
+  color: #161616;
+  white-space: pre-line;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+.intro {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #000000;
+  font-weight: 400;
+  max-width: 95%;
+}
+
+.primaryCtaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  min-width: 280px;
+  background-color: #0f62fe;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primaryCtaButton:hover {
+  background-color: #0353e9;
+}
+
+.primaryCtaIcon {
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.servicesGrid {
+  gap: 1rem !important;
+  padding-inline: 0 !important;
+}
+
+.serviceLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.serviceCard {
+  height: 100%;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #161616;
+}
+
+.serviceDesc {
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #525252;
+  flex-grow: 1;
+}
+
+.serviceCtaRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: auto;
+  transition: gap 0.2s;
+}
+
+.serviceLink:hover .serviceCtaRow {
+  gap: 0.5rem;
+}
+
+.serviceCtaLabel {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #0f62fe;
+}
+
+.serviceCtaIcon {
+  color: #0f62fe;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1056px) {
+  .topGrid {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .leftCol,
+  .rightCol {
+    padding: 0 !important;
+  }
+}

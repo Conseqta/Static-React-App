@@ -1,0 +1,244 @@
+.page {
+  background-color: #ffffff;
+}
+
+/* OVERVIEW SECTION */
+.overviewSection {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.overviewTextCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 10rem;
+  margin: 0;
+}
+
+.overviewHeading {
+  font-size: 2.75rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #161616;
+  margin-bottom: 1.5rem;
+}
+
+.overviewDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #161616;
+  margin: 0 0 1rem;
+}
+
+.overviewRightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.clientLogoBox {
+  padding: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.clientLogoPlaceholder {
+  width: 120px;
+  height: 60px;
+  background: linear-gradient(135deg, #e8f0fe, #c8dcff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.clientLogoInitials {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f62fe;
+}
+
+.metricsBox {
+  margin-top: 0;
+  width: 100%;
+}
+
+.metricsText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #161616;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+/* BENEFITS SECTION */
+.benefitsSection {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sectionHeading {
+  font-size: 2.75rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #161616;
+  margin-bottom: 1.5rem;
+}
+
+.benefitCol {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.benefitCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  background-color: transparent;
+}
+
+.benefitIcon {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 64px;
+  height: 64px;
+}
+
+.benefitTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #161616;
+  margin-bottom: 0.5rem;
+}
+
+.benefitDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #161616;
+  margin: 0;
+}
+
+/* CAPABILITIES SECTION */
+.capabilitiesSection {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.capabilityCol {
+  margin-bottom: 2rem;
+}
+
+.capabilityCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem 1rem 0;
+  background: #ffffff;
+  transition: box-shadow 0.2s ease;
+}
+
+.capabilityCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.capabilityTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #161616;
+  margin-bottom: 0.5rem;
+}
+
+.capabilityDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #161616;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.capabilityLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.capabilityLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: gap 0.2s;
+}
+
+.capabilityLink:hover {
+  gap: 0.625rem;
+  text-decoration: underline;
+}
+
+.linkIcon {
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  width: 20px;
+  height: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1056px) {
+  .overviewSection,
+  .benefitsSection,
+  .capabilitiesSection {
+    padding: 2.5rem 1rem;
+  }
+
+  .overviewTextCol {
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .overviewHeading {
+    font-size: 2.25rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.25rem;
+  }
+
+  .capabilityCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .overviewSection,
+  .benefitsSection,
+  .capabilitiesSection {
+    padding: 2rem 0.5rem;
+  }
+
+  .overviewHeading {
+    font-size: 1.75rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+}

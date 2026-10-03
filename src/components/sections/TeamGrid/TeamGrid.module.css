@@ -1,0 +1,262 @@
+.section {
+  background: #ffffff;
+  padding: 2.5rem 1rem 3rem;
+  margin-top: 1rem;
+}
+
+.grid {
+  margin: 0 auto;
+  padding-inline: 0;
+}
+
+.pageHeading {
+  margin: 0 0 1.75rem;
+  padding-left: 1rem;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #161616;
+}
+
+/* Featured leaders */
+.featuredRow {
+  margin-bottom: 1.75rem;
+}
+
+.featuredCard {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  column-gap: 2.5rem;
+  padding: 2rem;
+}
+
+.featuredPhotoCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.featuredPhotoWrapper {
+  position: relative;
+  width: 280px;
+  height: 360px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.featuredPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e8f0fe 0%, #c8dcff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoInitials {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #0f62fe;
+}
+
+.downloadLink {
+  font-size: 0.85rem;
+  color: #0f62fe;
+  text-decoration: none;
+}
+
+.downloadLink:hover,
+.downloadLink:focus {
+  text-decoration: underline;
+}
+
+.featuredContentCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaderName {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #161616;
+}
+
+.leaderTitle {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: #525252;
+}
+
+.iconRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.iconLink {
+  color: #161616;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.iconLink:hover,
+.iconLink:focus {
+  color: #0f62fe;
+}
+
+.bio {
+  margin: 0;
+  padding-right: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #525252;
+}
+
+/* Gallery */
+.galleryRow {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  background-color: #e0e0e0;
+  margin: 2rem;
+}
+
+.galleryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.galleryPhotoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.galleryPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galleryPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e8f0fe 0%, #c8dcff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galleryInitials {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0f62fe;
+}
+
+.galleryInfo {
+  margin-top: 0;
+  padding: 0.5rem 1rem 2rem 1rem;
+  width: 100%;
+}
+
+.galleryName {
+  font-size: 1.05rem;
+  color: #161616;
+  margin-bottom: 0.25rem;
+}
+
+.galleryTitle {
+  font-size: 0.9rem;
+  color: #525252;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1056px) {
+  .pageHeading {
+    font-size: 3rem;
+  }
+
+  .featuredCard {
+    grid-template-columns: 220px minmax(0, 1fr);
+    column-gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .featuredPhotoWrapper {
+    width: 220px;
+    height: 290px;
+  }
+
+  .leaderName {
+    font-size: 1.5rem;
+  }
+
+  .leaderTitle {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+    padding-right: 1rem;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .pageHeading {
+    font-size: 2.5rem;
+  }
+
+  .featuredCard {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .featuredPhotoWrapper {
+    width: 240px;
+    height: 320px;
+  }
+
+  .bio {
+    padding-right: 0;
+  }
+
+  .galleryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .galleryRow {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,168 @@
+.section {
+  background: #f7f3f0;
+  padding: 5rem 2rem 3rem;
+  margin: 0;
+}
+
+.grid {
+  padding-inline: 0 !important;
+}
+
+.leftCol {
+  padding-right: 2rem;
+}
+
+.heading {
+  margin: 0 0 1.5rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: clamp(3rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  color: #161616;
+}
+
+.body {
+  margin: 0;
+  max-width: 540px;
+  color: #161616;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.rightCol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #e0e0e0;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Cards row */
+.cardsRow {
+  margin-top: 3rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 1.5rem;
+  padding-right: 0.5rem;
+  transition: border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardClickable {
+  cursor: pointer;
+}
+
+.cardClickable:hover {
+  border-top-color: #525252;
+}
+
+.cardActive {
+  border-top-color: #0f62fe;
+}
+
+.cardActive:hover {
+  border-top-color: #0f62fe;
+}
+
+.cardCategory {
+  font-size: 0.8rem;
+  color: #8d8d8d;
+  margin-bottom: 0.25rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+.cardDesc {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: #525252;
+  line-height: 1.5;
+}
+
+.cardCtaRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 1.5rem;
+  margin-top: auto;
+}
+
+.cardCtaHidden {
+  visibility: hidden;
+}
+
+.cardCtaLabel {
+  color: #0f62fe;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cardCtaIcon {
+  color: #0f62fe;
+}
+
+@media (max-width: 1056px) {
+  .grid {
+    padding: 0 1rem !important;
+  }
+
+  .leftCol {
+    padding-right: 1rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 672px) {
+  .grid {
+    display: block;
+  }
+
+  .leftCol,
+  .rightCol {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,332 @@
+.insightsSection {
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
+.insightsGrid {
+  padding-inline: 0 !important;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 2rem;
+  padding-left: 25px;
+}
+
+.cardsGrid {
+  padding-inline: 0 !important;
+  margin: 0;
+}
+
+.leftColumn {
+  height: 100%;
+  padding-right: 0 !important;
+}
+
+.rightColumnWrapper {
+  padding-left: 0 !important;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0;
+}
+
+.topRightCard {
+  flex: 1;
+  min-height: 0;
+}
+
+.bottomRightCards {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  min-height: 0;
+}
+
+.bottomCardWrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Large card */
+.largeCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.largeCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.largeImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.imagePlaceholderLarge {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0f62fe 0%, #002d9c 100%);
+}
+
+.largeCardOverlay {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 1rem;
+  background: #f4f4f4;
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.largeCategory {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #6f6f6f;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.largeTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0;
+}
+
+.largeCtaAnchor {
+  display: inline-flex;
+  align-items: center;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: auto;
+}
+
+.largeCtaAnchor:hover {
+  text-decoration: underline;
+}
+
+/* Medium card */
+.mediumCard {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.mediumCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mediumImageWrapper {
+  position: relative;
+  width: 40%;
+  flex-shrink: 0;
+  background-color: #f4f4f4;
+  margin: 1rem;
+}
+
+.imagePlaceholderMedium {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0043ce 0%, #0f62fe 100%);
+}
+
+.mediumContent {
+  padding: 1rem 1rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.mediumCategory {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #6f6f6f;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.mediumTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 1rem;
+}
+
+.mediumCtaAnchor {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.mediumCtaAnchor:hover {
+  text-decoration: underline;
+}
+
+/* Small cards */
+.smallCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.smallCardBorderRight {
+  border-right: none;
+}
+
+.smallCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.smallImageWrapper {
+  width: 30%;
+  max-height: 80px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  flex-shrink: 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.imagePlaceholderSmall {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e8f0fe 0%, #c8dcff 100%);
+}
+
+.smallContent {
+  padding: 1.5rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.smallCategory {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #6f6f6f;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.smallTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  margin: 0 0 1rem;
+}
+
+.smallCtaAnchor {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.smallCtaAnchor:hover {
+  text-decoration: underline;
+}
+
+.ctaIcon {
+  margin-left: 0.375rem;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1056px) {
+  .insightsSection {
+    padding: 3rem 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .largeImageWrapper {
+    min-height: 400px;
+  }
+
+  .largeCardOverlay {
+    padding: 1.5rem;
+  }
+
+  .mediumCard {
+    flex-direction: column;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .mediumImageWrapper {
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative;
+  }
+
+  .rightColumn {
+    gap: 0;
+  }
+
+  .bottomRightCards {
+    flex-direction: column;
+  }
+
+  .smallCard {
+    border-left: 1px solid #e0e0e0;
+    border-top: none;
+  }
+
+  .smallCardBorderRight {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,148 @@
+.section {
+  padding: 3rem 1rem;
+  background: #ffffff;
+}
+
+.grid {
+  padding-inline: 0 !important;
+}
+
+.leftCol {
+  padding-right: 3rem;
+}
+
+.heading {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: #161616;
+}
+
+.intro {
+  margin: 0 0 2rem;
+  color: #525252;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.featureText {
+  flex: 1;
+}
+
+.featureTitle {
+  font-weight: 600;
+  color: #161616;
+  margin-bottom: 0.25rem;
+}
+
+.featureBody {
+  margin: 0;
+  color: #525252;
+  line-height: 1.6;
+}
+
+.ctaRow {
+  margin-top: 0;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.ctaLink:hover {
+  text-decoration: underline;
+}
+
+.ctaIcon {
+  color: #0f62fe;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
+.videoThumbWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.thumbPlaceholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e8f0fe 0%, #c8dcff 100%);
+}
+
+.playButton {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.playTriangle {
+  position: absolute;
+  margin-left: 4px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid #ffffff;
+}
+
+.videoCaption {
+  margin: 0.75rem 0 0;
+  color: #525252;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1056px) {
+  .leftCol {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .grid {
+    padding: 0 1rem !important;
+  }
+
+  .leftCol {
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
+}

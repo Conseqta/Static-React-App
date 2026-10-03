@@ -1,0 +1,150 @@
+.cardsSection {
+  padding: 3rem 1rem 4rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cardsGrid {
+  margin: 0 auto;
+  padding-inline: 0 !important;
+}
+
+.cardCol {
+  margin-bottom: 2.5rem;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #ffffff;
+  min-height: 520px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.cardLink:hover .card {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardImagePlaceholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0f62fe 0%, #002d9c 100%);
+}
+
+.cardBody {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  min-height: 180px;
+}
+
+.cardTitle {
+  min-height: 5rem;
+}
+
+.cardTitle h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #161616;
+  line-height: 1.4;
+}
+
+.cardExcerpt p {
+  margin: 4rem 0 0 0;
+  font-size: 1rem;
+  color: #161616;
+  line-height: 1.6;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: auto;
+  background: #ffffff;
+}
+
+.bookmarkButton {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: #0f62fe;
+  display: flex;
+  align-items: center;
+}
+
+.cardArrow {
+  color: #0f62fe;
+}
+
+/* Responsive */
+@media (max-width: 1056px) {
+  .card {
+    min-height: 460px;
+  }
+
+  .cardBody {
+    padding: 1.25rem;
+  }
+
+  .cardsSection {
+    padding: 2.5rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .cardsSection {
+    padding: 2rem 0.5rem 2.5rem;
+  }
+
+  .cardCol {
+    margin-bottom: 1.5rem;
+  }
+
+  .cardImageWrapper {
+    height: 200px;
+  }
+
+  .card {
+    min-height: 400px;
+  }
+
+  .cardBody {
+    padding: 1rem;
+  }
+
+  .cardFooter {
+    padding: 0.75rem 1rem;
+  }
+}

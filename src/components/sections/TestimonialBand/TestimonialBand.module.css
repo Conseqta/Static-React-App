@@ -1,0 +1,54 @@
+.section {
+  background: #ffffff;
+}
+
+.rule {
+  border-top: 1px solid #e0e0e0;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.quote {
+  margin: 0 0 2rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'IBM Plex Serif', 'Times New Roman', serif;
+  color: #161616;
+}
+
+.quote::before {
+  content: '\201C';
+}
+
+.quote::after {
+  content: '\201D';
+}
+
+.authorBlock {
+  margin-top: 0.5rem;
+}
+
+.authorName {
+  font-weight: 600;
+  color: #161616;
+  margin-bottom: 0.1rem;
+}
+
+.authorMeta {
+  color: #525252;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 672px) {
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+  }
+}

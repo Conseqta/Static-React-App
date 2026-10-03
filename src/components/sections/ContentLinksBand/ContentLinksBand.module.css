@@ -1,0 +1,143 @@
+.section {
+  padding: 2rem 1rem;
+  background-color: var(--cds-background, #ffffff);
+}
+
+.grid {
+  padding-inline: 0 !important;
+}
+
+/* xlg=12 left col */
+.leftCol {
+  padding-right: 15rem;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  color: var(--cds-text-primary, #161616);
+  white-space: pre-line;
+}
+
+.introTop {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--cds-text-secondary, #525252);
+}
+
+.introBottom {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--cds-text-secondary, #525252);
+}
+
+/* xlg=4 right col */
+.rightCol {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.linkItem {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--cds-border-subtle, #e0e0e0);
+}
+
+.linkItem:first-child {
+  padding-top: 0;
+}
+
+.linkMeta {
+  margin-bottom: 0.5rem;
+}
+
+.newTag {
+  display: inline-block;
+}
+
+.linkRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.link {
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  color: #0f62fe !important;
+  text-decoration: none !important;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
+.linkIcon {
+  flex-shrink: 0;
+  color: #0f62fe;
+}
+
+@media (max-width: 1056px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .leftCol {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .rightCol {
+    padding-left: 1rem;
+  }
+
+  .link {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 672px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .leftCol {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .rightCol {
+    padding-left: 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .link {
+    font-size: 1.125rem !important;
+  }
+
+  .linkItem {
+    padding: 1.25rem 0;
+  }
+}

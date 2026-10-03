@@ -1,0 +1,437 @@
+.page {
+  background: #ffffff;
+}
+
+/* ===== TOP HERO / CONFIRMATION ===== */
+
+.heroSection {
+  background: #f4f8ff;
+  padding: 0;
+  margin: 0;
+}
+
+.heroGrid {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heroLeftCol {
+  position: relative;
+  padding-right: 2rem;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+}
+
+/* Decorative background on the left column */
+.heroBackgroundWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.heroBackgroundDecor {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(244, 248, 255, 1) 0%, rgba(244, 248, 255, 0.7) 50%, rgba(244, 248, 255, 0) 100%);
+  z-index: 1;
+}
+
+.heroHeading {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 3.75rem;
+  font-weight: 100;
+  color: #161616;
+  line-height: 1.2;
+  padding: 1rem;
+}
+
+.heroRightCol {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Subscription Tiles — 2×2 grid */
+.tilesRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tileCard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+}
+
+.tileIconWrapper {
+  margin-bottom: 1rem;
+}
+
+.tileIconPlaceholder {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #e8f0fe, #c8dcff);
+  border-radius: 4px;
+}
+
+.tileTitle {
+  font-size: 0.75rem;
+  color: #6f6f6f;
+  line-height: 1.3;
+}
+
+.tileBody {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.tileCta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.tileCta:hover,
+.tileCta:focus {
+  text-decoration: underline;
+}
+
+.tileCtaIcon {
+  color: #0f62fe;
+}
+
+/* Promotional section */
+.promoSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+}
+
+.promoImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.1;
+}
+
+.promoImagePlaceholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e8f0fe 0%, #c8dcff 100%);
+}
+
+.promoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.promoEyebrow {
+  font-size: 0.75rem;
+  color: #6f6f6f;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.promoHeading {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #161616;
+  line-height: 1.4;
+}
+
+.promoCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.promoCta:hover,
+.promoCta:focus {
+  text-decoration: underline;
+}
+
+.promoCtaIcon {
+  color: #0f62fe;
+}
+
+/* ===== BOTTOM SECTION ===== */
+
+.bottomSection {
+  padding: 1rem 1rem 1rem;
+  background: #ffffff;
+}
+
+.bottomGrid {
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+/* Contact column */
+.contactCol {
+  padding-right: 3rem;
+  margin: 0;
+}
+
+.contactHeading {
+  margin: 0 0 0.5rem;
+  font-size: 2.75rem;
+  font-weight: 100;
+  color: #161616;
+  line-height: 1.3;
+}
+
+.contactBlocks {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+
+.contactBlock {
+  font-size: 0.875rem;
+  color: #525252;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 280px;
+}
+
+/* Icon area — original has 48px icon with scale(1.5) transform */
+.contactIconAndHeading {
+  margin-bottom: 1.75rem;
+}
+
+.contactIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contactIconInner {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #0f62fe, #002d9c);
+  border-radius: 4px;
+  transform: scale(1.5);
+  transform-origin: left top;
+}
+
+.contactBlockHeading {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #161616;
+}
+
+.contactLines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.2rem;
+}
+
+.contactLine {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #525252;
+}
+
+.contactLine:nth-child(3) {
+  margin-top: 0.5rem;
+}
+
+.contactLineKey {
+  font-weight: 600;
+  color: #161616;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #0f62fe;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: opacity 0.2s;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.socialLink:hover,
+.socialLink:focus {
+  text-decoration: underline;
+}
+
+.socialIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.socialPlatform {
+  font-size: 0.875rem;
+}
+
+/* Articles column */
+.articlesCol {
+  border-top: 1px solid #e0e0e0;
+  margin: 0;
+}
+
+.articlesHeading {
+  margin: 0 0 0.5rem;
+  padding-top: 1rem;
+  color: #6f6f6f;
+  font-size: 0.875rem;
+}
+
+.articlesList {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleItem {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.articleItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.articleTitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.articleMeta {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #6f6f6f;
+  line-height: 1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1056px) {
+  .heroGrid,
+  .bottomGrid {
+    padding: 0 1rem;
+  }
+
+  .heroLeftCol {
+    padding-right: 1rem;
+  }
+
+  .contactCol {
+    padding-right: 1rem;
+  }
+
+  .articlesCol {
+    padding-left: 1rem;
+  }
+
+  .contactBlocks {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 672px) {
+  .heroGrid {
+    display: block;
+  }
+
+  .heroLeftCol,
+  .heroRightCol {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroHeading {
+    font-size: 2.5rem;
+  }
+
+  .tilesRow {
+    grid-template-columns: 1fr;
+  }
+
+  .promoSection {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .promoImageWrapper {
+    height: 120px;
+    aspect-ratio: auto;
+    position: relative;
+  }
+
+  .bottomGrid {
+    padding-top: 1.5rem;
+    border-top: none;
+  }
+
+  .contactCol,
+  .articlesCol {
+    border: none;
+    padding: 0;
+  }
+
+  .articlesCol {
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+  }
+
+  .contactHeading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .articlesHeading {
+    margin-bottom: 1.25rem;
+  }
+
+  .contactBlocks {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
